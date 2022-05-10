@@ -1,0 +1,400 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+    z-index: 999;
+    top:0;
+    position:fixed;
+}
+.navbar_container{
+    display: grid;
+    grid-template-columns: 1fr 500px 1fr;
+    grid-template-rows: 100px 200px;
+    place-items: center;
+    height: 15vh;
+    width: 100vw;
+    font-size: 20px;
+    background-color: rgba(0,0,0,0.85);
+}
+.navbar_item{
+    text-decoration: none;
+    color: white;
+}
+.navbar_item:hover{
+    cursor:pointer; 
+    color: rgb(255,135,79);
+    transition: all 0.3s ease;
+}
+
+body{
+    background: url(images/Hatch.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+.bg_film{
+    position: absolute;
+    background-color: rgba(0,0,0,0.6);
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+}
+.front_page{
+    display: grid;
+    position:absolute;
+    grid-template-columns: 1fr 1fr 40px 1fr;
+    height: 100vh;
+    width: 100vw;
+    place-items:center;
+
+}
+.about_container{
+    color:#FFF;
+    position:relative;
+    height: 150px;
+    width: 360px;
+    margin-left: 50px;
+}
+.front_page_title{
+    margin-left: 50px;
+    position: sticky;
+    top: 15vh;
+}
+.skills{
+    color: white;
+    position: relative;
+    text-decoration: none;
+    list-style-type:none;
+    margin-top: 30%;
+}
+
+.tools{
+    color: white;
+    position: relative;
+    text-decoration: none;
+    list-style-type: none;
+    margin-top: 20%;
+}
+.socials{
+    position: relative;
+    height: 200px;
+    width: 270px;
+    margin-right: 0px;
+    margin-top: 10%;
+}
+.skill_TITLE{
+    font-weight: bold;
+    color: rgb(255,135,79);
+    font-size: 18px;
+}
+
+.linkedin_btn{
+    font-size: 1rem;
+    padding: 25px 100px;
+    border: black 2px solid;
+    border-radius: 5px;
+    background-color: black;
+    cursor: pointer;
+    transition: all 0.35s;
+    outline: none;
+    color: white;
+    text-decoration: none;
+    z-index:999;
+    justify-content: center;
+}
+.linkedin_btn:hover{
+    font-size: 1rem;
+    padding: 25px 100px;
+    border: black 2px solid;
+    border-radius: 5px;
+    background-color: rgba(224, 103, 6, 0.5);
+    margin-top:0.2rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    transition: all 0.35s;
+    outline: none;
+}
+
+.socials h4{
+    position: relative;
+    left: 25px;
+    top: 30px;
+    width: 220px;
+    color: white;
+}
+
+.resume{
+    position: relative;
+    z-index:999;
+    text-align:center;
+    height: 85vh;
+    width: 99vw;
+    margin-top:-200vh;
+    transition: all 0.35s ease;
+}
+.resume.toggle{
+    position: relative;
+    text-align:center;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 85vh;
+    width: 99vw;
+    margin-top: -67vh;
+    z-index: 990;
+    transition: all 0.35s ease;
+}
+
+.resume_container{
+    height: 100%;
+    width: 100%;
+}
+
+.resume_image{
+    text-align: center;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+/*THIS IS THE PROJECTS SECTION*/
+
+.projects{
+    position: relative;
+    top: 100vh;
+    height: 82vh;
+    width: 100vw;
+    z-index: 999;
+    color: white;
+    background: linear-gradient(rgba(0,0,0,0.9) 10%, rgba(0,0,0,1) 90%);
+}
+.projects_container{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 180px 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content:left;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    transition: all 1s ease-in-out;
+}
+.project_item{
+    position:relative;
+    padding: 0 20px 0 20px;
+}
+.projects_list_item{
+    list-style: none;
+    text-decoration: none;
+}
+.projects_subtitle{
+    position:absolute;
+    height: 100%;
+    width: 150px;
+    padding-left: 20px;
+    background-color: rgb(255,135,79);
+}
+.projects_subtitle h2{
+    position: relative;
+    margin-top: calc(50vh - 50%);
+}
+.projects_1P13:hover{
+    cursor: pointer;
+    color: rgb(255,135,79);
+    transition: all 0.35s;
+}
+.projects_2MP3:hover{
+    cursor: pointer;
+    color: rgb(255,135,79);
+    transition: all 0.35s;
+}
+.projects_2MD3:hover{
+    cursor: pointer;
+    color: rgb(255,135,79);
+    transition: all 0.35s;
+}
+.projects_2TA4:hover{
+    cursor: pointer;
+    color: rgb(255,135,79);
+    transition: all 0.35s;
+}
+.projects_2E04:hover{
+    cursor: pointer;
+    color: rgb(255,135,79);
+    transition: all 0.35s;
+}
+
+.more_1P13{
+    position:absolute;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 120px;
+    height: 100%;
+    width: 100%;
+    margin-left:100vw;
+    align-items: start;
+    color: white;
+    transition: all 1s ease-in-out;
+}
+.more_2MP3{
+    position: absolute;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 120px;
+    height: 100%;
+    width: 100%;
+    margin-left:100vw;
+    align-items:start;
+    transition: all 1s ease-in-out;
+}
+.more_2MD3{
+    position: absolute;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 120px;
+    height: 100%;
+    width: 100%;
+    margin-left:100vw;
+    align-items:start;
+    transition: all 1s ease-in-out;
+}
+.more_2TA4{
+    position: absolute;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 120px;
+    height: 100%;
+    width: 100%;
+    margin-left:100vw;
+    align-items:start;
+    transition: all 1s ease-in-out;
+}
+.more_2E04{
+    position: absolute;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 120px;
+    height: 100%;
+    width: 100%;
+    margin-left:100vw;
+    align-items:start;
+    transition: all 1s ease-in-out;
+}
+
+.more_project_container{
+    position:relative;
+    height: 100%;
+    width: 100%;
+    transition-duration: 0.8s;
+    transition-timing-function: cubic-bezier(.15,.78,.43,.99);
+}
+.more_project_container:hover{
+    position:relative;
+    background-color:rgba(255, 255, 255, 0.2);
+    height: 100%;
+    width: 100%;
+    transition-delay: 0.3s;
+    transition-duration: 0.8s;
+    transition-timing-function: cubic-bezier(.15,.78,.43,.99);
+}
+.P13_project_item{
+    position: absolute;
+    padding: 0 30px 0 30px;
+    top: 25%;
+}
+
+.back_to_projects{
+    position:absolute;
+    background-color: rgb(255,135,79);
+    height: 100%;
+    width: 120px;
+    margin-left: 190vw;
+    transition: all 1s ease-in-out;
+}
+.back_to_projects h2{
+    position: relative;
+    margin-left: 10px;
+    margin-top: calc(50vh - 50%);
+}
+.back_to_projects:hover{
+    cursor: pointer;
+}
+/*-----------------toggling between different projects------------*/
+.projects_container.toggle{
+    margin-left: -100vw;
+    transition-duration: 0.8s;
+    transition-timing-function: cubic-bezier(.15,.78,.43,.99);
+}
+.back_to_projects.toggle{
+    position:absolute;
+    z-index: 999;
+    background-color: rgb(255,135,79);
+    height: 100%;
+    width: 120px;
+    margin-left: 90vw;
+    transition-duration: 0.8s;
+    transition-timing-function: cubic-bezier(.15,.78,.43,.99);
+}
+.more_1P13.toggle{
+    position:absolute;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 120px;
+    height: 100%;
+    width: 100%;
+    margin-left:0;
+    align-items: start;
+    color: white;
+    text-decoration:none;
+
+    transition-duration: 0.8s;
+    transition-timing-function: cubic-bezier(.15,.78,.43,.99);
+}
+.more_2MP3.toggle{
+    position:absolute;
+    display:grid;
+    grid-template-columns: 1fr 1fr 120px;
+    height: 100%;
+    width: 100%;
+    margin-left:0;
+    align-items: start;
+    color: white;
+    transition-duration: 0.8s;
+    transition-timing-function: cubic-bezier(.15,.78,.43,.99);
+}
+.more_2MD3.toggle{
+    position:absolute;
+    display:grid;
+    grid-template-columns: 1fr 1fr 120px;
+    height: 100%;
+    width: 100%;
+    margin-left:0;
+    align-items: start;
+    color: white;
+    transition-duration: 0.8s;
+    transition-timing-function: cubic-bezier(.15,.78,.43,.99);
+}
+.more_2TA4.toggle{
+    position:absolute;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 120px;
+    height: 100%;
+    width: 100%;
+    margin-left:0;
+    align-items: start;
+    color: white;
+    transition-duration: 0.8s;
+    transition-timing-function: cubic-bezier(.15,.78,.43,.99);
+}
+.more_2E04.toggle{
+    position:absolute;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 120px;
+    height: 100%;
+    width: 100%;
+    margin-left:0;
+    align-items: start;
+    color: white;
+    transition-duration: 0.8s;
+    transition-timing-function: cubic-bezier(.15,.78,.43,.99);
+}
+
