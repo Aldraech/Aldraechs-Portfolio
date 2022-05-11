@@ -331,7 +331,7 @@ body{
     background-color: rgb(255,135,79);
     height: 100%;
     width: 120px;
-    margin-left: 90vw;
+    margin-left: calc(100vw - 120px);
     transition-duration: 0.8s;
     transition-timing-function: cubic-bezier(.15,.78,.43,.99);
 }
